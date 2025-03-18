@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE4D963E2D89D88C00816B38 /* UIModule in Frameworks */ = {isa = PBXBuildFile; productRef = DE4D963D2D89D88C00816B38 /* UIModule */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DE3AD66A2D89B6ED0064C863 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,6 +33,16 @@
 		DE3AD6732D89B6ED0064C863 /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DE4D963B2D89C77C00816B38 /* Exceptions for "Modules" folder in "Countries" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UIModule,
+			);
+			target = DE3AD6582D89B6EB0064C863 /* Countries */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DE3AD65B2D89B6EB0064C863 /* Countries */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -45,6 +59,14 @@
 			path = CountriesUITests;
 			sourceTree = "<group>";
 		};
+		DE4D963A2D89C77B00816B38 /* Modules */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DE4D963B2D89C77C00816B38 /* Exceptions for "Modules" folder in "Countries" target */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4D963E2D89D88C00816B38 /* UIModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +98,11 @@
 		DE3AD6502D89B6EB0064C863 = {
 			isa = PBXGroup;
 			children = (
+				DE4D963A2D89C77B00816B38 /* Modules */,
 				DE3AD65B2D89B6EB0064C863 /* Countries */,
 				DE3AD66C2D89B6ED0064C863 /* CountriesTests */,
 				DE3AD6762D89B6ED0064C863 /* CountriesUITests */,
+				DE4D963C2D89D88C00816B38 /* Frameworks */,
 				DE3AD65A2D89B6EB0064C863 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +115,13 @@
 				DE3AD6732D89B6ED0064C863 /* CountriesUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DE4D963C2D89D88C00816B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +141,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DE3AD65B2D89B6EB0064C863 /* Countries */,
+				DE4D963A2D89C77B00816B38 /* Modules */,
 			);
 			name = Countries;
 			packageProductDependencies = (
+				DE4D963D2D89D88C00816B38 /* UIModule */,
 			);
 			productName = Countries;
 			productReference = DE3AD6592D89B6EB0064C863 /* Countries.app */;
@@ -552,6 +586,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE4D963D2D89D88C00816B38 /* UIModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE3AD6512D89B6EB0064C863 /* Project object */;
 }
