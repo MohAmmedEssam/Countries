@@ -8,6 +8,6 @@
 import Foundation
 
 // MARK: - NetworkServiceContract
-public protocol NetworkServiceContract {
+public protocol NetworkServiceContract: Sendable {
     func request<T: Codable>(_ request: URLRequest) async throws -> T
 }
