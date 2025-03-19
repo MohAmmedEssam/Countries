@@ -7,31 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2C24D02D8C590100E50242 /* CountriesModule in Frameworks */ = {isa = PBXBuildFile; productRef = DE2C24CF2D8C590100E50242 /* CountriesModule */; };
 		DE4D963E2D89D88C00816B38 /* UIModule in Frameworks */ = {isa = PBXBuildFile; productRef = DE4D963D2D89D88C00816B38 /* UIModule */; };
 		DEB36B182D8B21DD0085C417 /* CoreModule in Frameworks */ = {isa = PBXBuildFile; productRef = DEB36B172D8B21DD0085C417 /* CoreModule */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DE3AD66A2D89B6ED0064C863 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE3AD6512D89B6EB0064C863 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE3AD6582D89B6EB0064C863;
-			remoteInfo = Countries;
-		};
-		DE3AD6742D89B6ED0064C863 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE3AD6512D89B6EB0064C863 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE3AD6582D89B6EB0064C863;
-			remoteInfo = Countries;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		DE3AD6592D89B6EB0064C863 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE3AD6692D89B6ED0064C863 /* CountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE3AD6732D89B6ED0064C863 /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -39,6 +21,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				CoreModule,
+				CountriesModule,
 				UIModule,
 			);
 			target = DE3AD6582D89B6EB0064C863 /* Countries */;
@@ -49,16 +32,6 @@
 		DE3AD65B2D89B6EB0064C863 /* Countries */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Countries;
-			sourceTree = "<group>";
-		};
-		DE3AD66C2D89B6ED0064C863 /* CountriesTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CountriesTests;
-			sourceTree = "<group>";
-		};
-		DE3AD6762D89B6ED0064C863 /* CountriesUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CountriesUITests;
 			sourceTree = "<group>";
 		};
 		DE4D963A2D89C77B00816B38 /* Modules */ = {
@@ -77,35 +50,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4D963E2D89D88C00816B38 /* UIModule in Frameworks */,
+				DE2C24D02D8C590100E50242 /* CountriesModule in Frameworks */,
 				DEB36B182D8B21DD0085C417 /* CoreModule in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE3AD6662D89B6ED0064C863 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE3AD6702D89B6ED0064C863 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE2C24CE2D8C590100E50242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE3AD6502D89B6EB0064C863 = {
 			isa = PBXGroup;
 			children = (
 				DE4D963A2D89C77B00816B38 /* Modules */,
 				DE3AD65B2D89B6EB0064C863 /* Countries */,
-				DE3AD66C2D89B6ED0064C863 /* CountriesTests */,
-				DE3AD6762D89B6ED0064C863 /* CountriesUITests */,
-				DEB36B162D8B21DD0085C417 /* Frameworks */,
+				DE2C24CE2D8C590100E50242 /* Frameworks */,
 				DE3AD65A2D89B6EB0064C863 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,17 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				DE3AD6592D89B6EB0064C863 /* Countries.app */,
-				DE3AD6692D89B6ED0064C863 /* CountriesTests.xctest */,
-				DE3AD6732D89B6ED0064C863 /* CountriesUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DEB36B162D8B21DD0085C417 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,56 +106,11 @@
 			packageProductDependencies = (
 				DE4D963D2D89D88C00816B38 /* UIModule */,
 				DEB36B172D8B21DD0085C417 /* CoreModule */,
+				DE2C24CF2D8C590100E50242 /* CountriesModule */,
 			);
 			productName = Countries;
 			productReference = DE3AD6592D89B6EB0064C863 /* Countries.app */;
 			productType = "com.apple.product-type.application";
-		};
-		DE3AD6682D89B6ED0064C863 /* CountriesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE3AD6802D89B6ED0064C863 /* Build configuration list for PBXNativeTarget "CountriesTests" */;
-			buildPhases = (
-				DE3AD6652D89B6ED0064C863 /* Sources */,
-				DE3AD6662D89B6ED0064C863 /* Frameworks */,
-				DE3AD6672D89B6ED0064C863 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE3AD66B2D89B6ED0064C863 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				DE3AD66C2D89B6ED0064C863 /* CountriesTests */,
-			);
-			name = CountriesTests;
-			packageProductDependencies = (
-			);
-			productName = CountriesTests;
-			productReference = DE3AD6692D89B6ED0064C863 /* CountriesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DE3AD6722D89B6ED0064C863 /* CountriesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE3AD6832D89B6ED0064C863 /* Build configuration list for PBXNativeTarget "CountriesUITests" */;
-			buildPhases = (
-				DE3AD66F2D89B6ED0064C863 /* Sources */,
-				DE3AD6702D89B6ED0064C863 /* Frameworks */,
-				DE3AD6712D89B6ED0064C863 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE3AD6752D89B6ED0064C863 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				DE3AD6762D89B6ED0064C863 /* CountriesUITests */,
-			);
-			name = CountriesUITests;
-			packageProductDependencies = (
-			);
-			productName = CountriesUITests;
-			productReference = DE3AD6732D89B6ED0064C863 /* CountriesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,14 +124,6 @@
 				TargetAttributes = {
 					DE3AD6582D89B6EB0064C863 = {
 						CreatedOnToolsVersion = 16.1;
-					};
-					DE3AD6682D89B6ED0064C863 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = DE3AD6582D89B6EB0064C863;
-					};
-					DE3AD6722D89B6ED0064C863 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = DE3AD6582D89B6EB0064C863;
 					};
 				};
 			};
@@ -239,28 +142,12 @@
 			projectRoot = "";
 			targets = (
 				DE3AD6582D89B6EB0064C863 /* Countries */,
-				DE3AD6682D89B6ED0064C863 /* CountriesTests */,
-				DE3AD6722D89B6ED0064C863 /* CountriesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DE3AD6572D89B6EB0064C863 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE3AD6672D89B6ED0064C863 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE3AD6712D89B6ED0064C863 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,34 +164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE3AD6652D89B6ED0064C863 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE3AD66F2D89B6ED0064C863 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DE3AD66B2D89B6ED0064C863 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DE3AD6582D89B6EB0064C863 /* Countries */;
-			targetProxy = DE3AD66A2D89B6ED0064C863 /* PBXContainerItemProxy */;
-		};
-		DE3AD6752D89B6ED0064C863 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DE3AD6582D89B6EB0064C863 /* Countries */;
-			targetProxy = DE3AD6742D89B6ED0064C863 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DE3AD67B2D89B6ED0064C863 /* Debug */ = {
@@ -436,11 +296,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Countries/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "app need location update";
+				INFOPLIST_KEY_NSLocationUsageDescription = "app need location update";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "app need location update";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,11 +328,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Countries/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "app need location update";
+				INFOPLIST_KEY_NSLocationUsageDescription = "app need location update";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "app need location update";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,74 +347,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		DE3AD6812D89B6ED0064C863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammedessam.CountriesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Countries";
-			};
-			name = Debug;
-		};
-		DE3AD6822D89B6ED0064C863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammedessam.CountriesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Countries";
-			};
-			name = Release;
-		};
-		DE3AD6842D89B6ED0064C863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammedessam.CountriesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Countries;
-			};
-			name = Debug;
-		};
-		DE3AD6852D89B6ED0064C863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammedessam.CountriesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Countries;
 			};
 			name = Release;
 		};
@@ -571,27 +371,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE3AD6802D89B6ED0064C863 /* Build configuration list for PBXNativeTarget "CountriesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE3AD6812D89B6ED0064C863 /* Debug */,
-				DE3AD6822D89B6ED0064C863 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DE3AD6832D89B6ED0064C863 /* Build configuration list for PBXNativeTarget "CountriesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE3AD6842D89B6ED0064C863 /* Debug */,
-				DE3AD6852D89B6ED0064C863 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE2C24CF2D8C590100E50242 /* CountriesModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesModule;
+		};
 		DE4D963D2D89D88C00816B38 /* UIModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UIModule;

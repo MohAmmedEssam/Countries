@@ -7,22 +7,21 @@
 
 import SwiftUI
 import UIModule
+import CountriesModule
 
 struct AppUI: View {
     @StateObject var appRouter = AppRouter.shared
-
+    
     var body: some View {
         NavigationStack(path: $appRouter.stackPaths) {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
-            }
-            .navigationDestination(for: NavigationDestination.self) { destination in
-                destination.view
-            }
+            ListView()
+                .navigationDestination(for: NavigationDestination.self) { destination in
+                    destination.view
+                }
         }
+        .environmentObject(
+            appRouter
+        )
     }
 }
 #Preview {
