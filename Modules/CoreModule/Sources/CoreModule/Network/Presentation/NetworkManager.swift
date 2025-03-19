@@ -22,8 +22,8 @@ public actor NetworkManager {
 
 // MARK: - Request
 //
-public extension NetworkManager {
-    func request<T: Codable>(_ request: URLRequest) async throws -> T {
+extension NetworkManager: NetworkServiceContract {
+    public func request<T: Codable & Sendable>(_ request: URLRequest) async throws -> T {
 #if DEBUG
         print("--------------------------------------------------------\n",
               "URL:            \(request.url?.absoluteString ?? "")\n",
