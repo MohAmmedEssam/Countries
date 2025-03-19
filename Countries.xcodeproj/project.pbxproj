@@ -105,7 +105,6 @@
 				DE3AD65B2D89B6EB0064C863 /* Countries */,
 				DE3AD66C2D89B6ED0064C863 /* CountriesTests */,
 				DE3AD6762D89B6ED0064C863 /* CountriesUITests */,
-				DEB36B162D8B21DD0085C417 /* Frameworks */,
 				DE3AD65A2D89B6EB0064C863 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,13 +117,6 @@
 				DE3AD6732D89B6ED0064C863 /* CountriesUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DEB36B162D8B21DD0085C417 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
